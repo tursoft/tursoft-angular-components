@@ -2,11 +2,11 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
 
-## Aim
+## The Aim
 
 This is a simple component to play with angular component packaging functionality.
 
-## How To Use
+## Usage
 
 ```
 npm i ngx-photo-card --save
