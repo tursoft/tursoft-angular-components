@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-photo-card": [
+        "dist/ngx-photo-card"
+      ],
+      "ngx-photo-card/*": [
+        "dist/ngx-photo-card/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

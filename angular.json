@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "NgxPhotoCard": {
+      "projectType": "library",
+      "root": "projects/ngx-photo-card",
+      "sourceRoot": "projects/ngx-photo-card/src",
+      "prefix": "NgxPc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-photo-card/tsconfig.lib.json",
+            "project": "projects/ngx-photo-card/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-photo-card/src/test.ts",
+            "tsConfig": "projects/ngx-photo-card/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-photo-card/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-photo-card/tsconfig.lib.json",
+              "projects/ngx-photo-card/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "mycomponents2"
 }

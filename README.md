@@ -1,6 +1,7 @@
-# Mycomponents2
+# tursoft-angular-components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
+The aim of this project is to demonstrate same samples about how to develop and publish angular components.
+
 
 ## Development server
 

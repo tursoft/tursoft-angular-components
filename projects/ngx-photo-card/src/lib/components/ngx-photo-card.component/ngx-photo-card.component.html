@@ -1,0 +1,19 @@
+<div class="container">
+    <div *ngIf="photos == null || photos.length <= 0">
+        No photo to show!
+    </div>
+
+    <div *ngIf="photos != null && photos.length > 0">
+        <div class="image-container" [style.width]="selectedPhoto.imgWidth"  [style.height]="selectedPhoto.imgHeight">
+            <img *ngIf="selectedPhoto.imgSrc!=null && selectedPhoto.imgSrc!='' " class="image" [src]="selectedPhoto.imgSrc">
+        </div>        
+
+        <div class="label-container">
+            <span class="btn btn-prev" (click)="moveBack()" [style.visibility]="canMoveNext() ? 'visible' : 'hidden'">&lt;</span>
+            <span class="label">{{selectedPhoto.title}}</span>
+            <span class="btn btn-next" (click)="moveNext()" [style.visibility]="canMoveNext() ? 'visible' : 'hidden'">&gt;</span>
+        </div>
+
+        <div class="image-index">{{ selectedPhotoIndex + 1 }} / {{ photoCount }}</div>
+    </div>    
+</div>
