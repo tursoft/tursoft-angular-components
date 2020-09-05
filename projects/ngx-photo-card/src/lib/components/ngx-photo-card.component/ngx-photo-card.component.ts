@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { PhotoInfo } from '../../models/photoinfo';
+import { PhotoCardOptions } from '../../models/options';
 
 @Component({
   selector: 'NgxPc-NgxPhotoCard',
@@ -12,13 +13,22 @@ export class NgxPhotoCardComponent implements OnInit {
   get photoCount(): number { return this._photoCount; }
   set photoCount(val: number) { this._photoCount = val; }
 
+  @Output() public selectedPhotoIndexChange = new EventEmitter<number>();
   private _selectedPhotoIndex = 0;
   get selectedPhotoIndex(): number { return this._selectedPhotoIndex; }
-  @Input() set selectedPhotoIndex(val: number) { this._selectedPhotoIndex = val; this.refreshView(); }
+  @Input() set selectedPhotoIndex(val: number) {
+    this._selectedPhotoIndex = val;
+    this.refreshView();
+    this.selectedPhotoIndexChange.emit(this._selectedPhotoIndex);
+  }
 
+  @Output() public selectedPhotoChange = new EventEmitter<PhotoInfo>();
   private _selectedPhoto = null;
   get selectedPhoto(): PhotoInfo { return this._selectedPhoto; }
-  set selectedPhoto(val: PhotoInfo) { this._selectedPhoto = val; }
+  set selectedPhoto(val: PhotoInfo) {
+    this._selectedPhoto = val;
+    this.selectedPhotoChange.emit(this._selectedPhoto);
+  }
 
   private _photos: PhotoInfo[] = [
         { title: 'Title1', imgSrc: 'assets/photo1', imgWidth: '100%', imgHeight: '100%' },
@@ -27,6 +37,10 @@ export class NgxPhotoCardComponent implements OnInit {
       ];
   get photos(): PhotoInfo[] { return this._photos; }
   @Input() set photos(val: PhotoInfo[]) { this._photos = val; this.refreshView(); }
+
+  private _options: PhotoCardOptions = { borderColor: '#ddd', borderRadius: '10px', showNumber: true };
+  get options(): PhotoCardOptions { return this._options; }
+  @Input() set options(val: PhotoCardOptions) { this._options = val; }
 
   constructor() {
     this.refreshView();
@@ -54,7 +68,7 @@ export class NgxPhotoCardComponent implements OnInit {
   }
 
   canMoveBack(): boolean {
-    return (this.selectedPhotoIndex < this.photoCount);
+    return (this.selectedPhotoIndex > 0);
   }
 
   moveNext() {

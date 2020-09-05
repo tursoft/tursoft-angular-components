@@ -1,6 +1,8 @@
+$border-color: #ddd;
+
 .container {
     padding: 12px;
-    border: 1px solid lightgray;    
+    border: 1px solid $border-color;
     background-color: white;
     width: auto;
     display: inline-block;
@@ -10,7 +12,7 @@
 
 .image-container {
     border-radius: 10px;
-    // background-color: lightgray;
+    // background-color: $border-color;
     // overflow: hidden;
 }
 
@@ -69,5 +71,5 @@
 }
 
 .btn:hover {
-    background-color: lightgray;
+    background-color: $border-color;
 }
