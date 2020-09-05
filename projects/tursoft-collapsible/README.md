@@ -1,24 +1,38 @@
-# TursoftCollapsible
+# tursoft-collapsible
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
 
-## Code scaffolding
+## The Aim
 
-Run `ng generate component component-name --project tursoft-collapsible` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project tursoft-collapsible`.
-> Note: Don't forget to add `--project tursoft-collapsible` or else it will be added to the default project in your `angular.json` file. 
+This is a simple component to play with angular component packaging functionality.
 
-## Build
+## Usage
 
-Run `ng build tursoft-collapsible` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm i tursoft-collapsible --save
+```
 
-## Publishing
+*module.ts*
+```typescript
+import { TursoftCollapsibleModule } from 'tursoft-collapsible';
 
-After building your library with `ng build tursoft-collapsible`, go to the dist folder `cd dist/tursoft-collapsible` and run `npm publish`.
+@NgModule({
+  imports: [    
+    TursoftCollapsibleModule
+  ]
+})
+```
 
-## Running unit tests
-
-Run `ng test tursoft-collapsible` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*mycomponent.html*
+```html
+  <tursoft-collapsible>
+    <div collapsible-header>
+        <span style="color: blue;">.NET</span>
+    </div>
+    <div collapsible-body>
+        <strong style="color: blue;">.NET Framework</strong> (pronounced as "dot net") is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library called Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) across several programming languages. Programs written for .NET Framework execute in a software environment (in contrast to a hardware environment) named the Common Language Runtime (CLR). The CLR is an application virtual machine that provides services such as security, memory management, and exception handling. As such, computer code written using .NET Framework is called "managed code". FCL and CLR together constitute the .NET Framework.
+        <br/>
+        FCL provides the user interface, data access, database connectivity, cryptography, web application development, numeric algorithms, and network communications. Programmers produce software by combining their source code with .NET Framework and other libraries. The framework is intended to be used by most new applications created for the Windows platform. Microsoft also produces an integrated development environment for .NET software called Visual Studio.    
+    </div>
+  </tursoft-collapsible>
+```
