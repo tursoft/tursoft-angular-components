@@ -159,6 +159,41 @@
           }
         }
       }
+    },
+    "tursoft-collapsible": {
+      "projectType": "library",
+      "root": "projects/tursoft-collapsible",
+      "sourceRoot": "projects/tursoft-collapsible/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tursoft-collapsible/tsconfig.lib.json",
+            "project": "projects/tursoft-collapsible/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tursoft-collapsible/src/test.ts",
+            "tsConfig": "projects/tursoft-collapsible/tsconfig.spec.json",
+            "karmaConfig": "projects/tursoft-collapsible/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tursoft-collapsible/tsconfig.lib.json",
+              "projects/tursoft-collapsible/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "mycomponents2"
 }
