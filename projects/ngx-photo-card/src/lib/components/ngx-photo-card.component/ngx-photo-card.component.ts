@@ -3,7 +3,7 @@ import { PhotoInfo } from '../../models/photoinfo';
 import { PhotoCardOptions } from '../../models/options';
 
 @Component({
-  selector: 'NgxPc-NgxPhotoCard',
+  selector: 'ngx-photo-card',
   templateUrl: './ngx-photo-card.component.html',
   styleUrls: ['./ngx-photo-card.component.scss']
 })

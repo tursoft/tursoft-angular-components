@@ -25,7 +25,7 @@ import { NgxPhotoCardModule } from 'ngx-photo-card';
 
 *mycomponent.html*
 ```html
-<NgxPc-NgxPhotoCard [photos]="photos"></NgxPc-NgxPhotoCard>
+<ngx-photo-card [photos]="photos"></ngx-photo-card>
 ```
 
 

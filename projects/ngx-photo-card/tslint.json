@@ -4,13 +4,15 @@
     "directive-selector": [
       true,
       "attribute",
-      "ngxPc",
+      "tursoft",
+      "ngx",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "ngx-pc",
+      "tursoft",
+      "ngx",
       "kebab-case"
     ]
   }
