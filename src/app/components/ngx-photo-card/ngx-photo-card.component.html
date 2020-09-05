@@ -1,0 +1,22 @@
+<h3>ngx-photo-card</h3>
+
+<div style="display: inline-block; margin: 5px;">
+  <ngx-photo-card [photos]="photos" [(selectedPhotoIndex)]="selectedPhotoIndex1" (selectedPhotoChange)="selectedPhoto1=$event"></ngx-photo-card>
+  <div style="text-align:center; margin: 5px; min-height: 15px;">
+      <span>{{ selectedPhotoIndex1 }}</span>
+  </div>
+</div>
+
+<div style="display: inline-block; margin: 5px;">
+  <ngx-photo-card [photos]="photos" [(selectedPhotoIndex)]="selectedPhotoIndex2" (selectedPhotoChange)="selectedPhoto2=$event" [options]="options2" ></ngx-photo-card>
+  <div style="text-align:center; margin: 5px; min-height: 15px;">
+    <span *ngIf="selectedPhoto2">{{ selectedPhoto2.title }}</span>
+  </div>
+</div>
+
+<div style="display: inline-block; margin: 5px;">
+  <ngx-photo-card [photos]="photos" [(selectedPhotoIndex)]="selectedPhotoIndex3" (selectedPhotoChange)="selectedPhoto3=$event" [options]="options3" ></ngx-photo-card>
+  <div style="text-align:center; margin: 5px; min-height: 15px;">
+    <span *ngIf="selectedPhoto3" style="font-size: 9px;">{{ selectedPhoto3.imgSrc }}</span>
+  </div>
+</div>
