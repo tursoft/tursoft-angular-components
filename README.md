@@ -25,4 +25,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * add git pages link to npm page
 * add some screenshoots
 * implement tests
-
+* samples on stackblitz.com
