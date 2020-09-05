@@ -24,6 +24,12 @@
       ],
       "ngx-photo-card/*": [
         "dist/ngx-photo-card/*"
+      ],
+      "tursoft-collapsible": [
+        "dist/tursoft-collapsible"
+      ],
+      "tursoft-collapsible/*": [
+        "dist/tursoft-collapsible/*"
       ]
     }
   },
