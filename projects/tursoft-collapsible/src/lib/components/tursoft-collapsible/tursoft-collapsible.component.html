@@ -1,0 +1,10 @@
+<div class="collapsible-container">
+    <div class="collapsible-header" (click)="toggle()">
+        <ng-content select="[collapsible-header]"></ng-content>
+    </div>
+    <div class="collapsible-body" [ngClass]="isExpanded ? 'expanded' : 'collapsed'">        
+        <div class="collapsible-body-wrapper">
+            <ng-content select="[collapsible-body]"></ng-content>
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,40 @@
+$border-color: #ddd;
+
+.collapsible-container {
+    border: 1px solid $border-color;
+    display: block;
+    margin: 2px;
+}
+
+.collapsible-header {
+    border: 1px solid $border-color;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.collapsible-body {
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+}
+
+.collapsible-body-wrapper {
+    padding: 10px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid $border-color;
+}
+
+// .collapsible-body .expanded {
+//     height: auto;
+// }
+
+.collapsible-body.collapsed {
+
+    height: 0px;
+    overflow: hidden;
+    // display: none;
+}
