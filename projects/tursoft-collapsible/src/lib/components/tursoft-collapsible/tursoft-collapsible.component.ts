@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { TursoftBaseComponentComponent } from '../tursoft-base-component/tursoft-base-component.component';
-import { fdatasync } from 'fs';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({

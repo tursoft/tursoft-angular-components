@@ -12,11 +12,23 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 [![npm version](https://badge.fury.io/js/ngx-photo-card.svg)](https://badge.fury.io/js/ngx-photo-card)
 
+* *tursoft-collapsible*
+
+[![npm version](https://badge.fury.io/js/tursoft-collapsible.svg)](https://badge.fury.io/js/tursoft-collapsible)
+
 ## Roadmap
 * Login Component (Microsoft / Google Style)
 * Photo Upload Component
 * Icon Chooser Component
 * ...
+
+## How to Deploy
+
+*ngx-photo-card*
+* npm run publish-ngx-photo-card
+
+*tursoft-collapsible*
+* npm run publish-tursoft-collapsible
 
 ## Todos
 

@@ -125,7 +125,7 @@
         }
       }
     },
-    "NgxPhotoCard": {
+    "ngx-photo-card": {
       "projectType": "library",
       "root": "projects/ngx-photo-card",
       "sourceRoot": "projects/ngx-photo-card/src",
