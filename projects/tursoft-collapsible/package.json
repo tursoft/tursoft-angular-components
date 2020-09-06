@@ -1,13 +1,24 @@
 {
   "name": "tursoft-collapsible",
-  "version": "0.0.7",
-  "author": { "name": "Muhammet Turşak", "email": "tursoft@gmail.com", "url": "http://tursoft.net" },
-  "repository": { "type": "git", "url": "https://github.com/tursoft/tursoft-angular-components" },
+  "version": "0.0.8",
+  "author": {
+    "name": "Muhammet Turşak",
+    "email": "tursoft@gmail.com",
+    "url": "http://tursoft.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tursoft/tursoft-angular-components"
+  },
   "homepage": "https://tursoft.github.io/tursoft-angular-components/#/tursoft-collapsible",
   "license": "MIT",
-  "keywords": ["angular", "component", "photo"],
+  "keywords": [
+    "angular",
+    "component",
+    "photo"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
-  }  
+  }
 }
