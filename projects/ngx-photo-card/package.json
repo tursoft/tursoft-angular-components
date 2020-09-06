@@ -3,6 +3,7 @@
   "version": "0.0.5",
   "author": { "name": "Muhammet Turşak", "email": "tursoft@gmail.com", "url": "http://tursoft.net" },
   "repository": { "type": "git", "url": "https://github.com/tursoft/tursoft-angular-components" },
+  "homepage": "https://tursoft.github.io/tursoft-angular-components",
   "license": "MIT",
   "keywords": ["angular", "component", "photo"],
   "peerDependencies": {

@@ -3,7 +3,7 @@
 Simple photo card component for Angular
 
 ## Demo Page
-* https://tursoft.github.io/tursoft-angular-components/
+* https://tursoft.github.io/tursoft-angular-components
 
 ## Usage
 
