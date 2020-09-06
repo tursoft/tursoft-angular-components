@@ -2,10 +2,6 @@
 
 Simple photo card component for Angular
 
-## The Aim
-
-This is a simple component to play with angular component packaging functionality.
-
 ## Usage
 
 ```
