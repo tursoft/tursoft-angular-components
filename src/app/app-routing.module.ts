@@ -19,7 +19,7 @@ const routes: AppRoute[] = [
       data: { type: 'homepage', title: 'Home' }},
 
   { path: 'tursoft-collapsible', component: TursoftCollapsibleComponent,
-      data: { type: 'component', title: 'tursoft-collapsible', summary: 'Simple photo card component' }},
+      data: { type: 'component', title: 'tursoft-collapsible', summary: 'Simple collapsible component' }},
 
   { path: 'ngx-photo-card', component: NgxPhotoCardComponent,
       data: { type: 'component', title: 'ngx-photo-card' , summary: 'Simple photo card component' }},

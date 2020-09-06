@@ -1,7 +1,17 @@
 <div class="card-container">
     <div class="card" *ngFor="let component of components">
+        <div style="font-size: 56px;">
+            <i class="fab fa-angular"></i>
+        </div>
         <div class="card-title">{{ component.title }}</div>
         <p class="card-summary">{{ component.summary }}</p>
+        <!-- <div>
+            <a href="https://badge.fury.io/js/{{component.path}}"><img src="https://badge.fury.io/js/{{component.path}}.svg" alt="npm version" height="18"></a>
+            <a class="btn btn-light btn-sm page-title-link" [href]="'https://github.com/tursoft/tursoft-angular-components/tree/master/projects/'+component.path" target="_blank"><i class="fab fa-github"></i> Github</a><br/>
+            <a class="btn btn-light btn-sm page-title-link" [href]="'https://www.npmjs.com/package/'+component.path" target="_blank"><i class="fab fa-npm"></i> Npm</a> 
+            <a class="btn btn-light btn-sm page-title-link" [href]="'https://stackblitz.com/edit/'+component.path" target="_blank"><i class="fas fa-code"></i> Source</a>                        
+        </div> -->
+
         <a [routerLink]="[component.path]" class="btn btn-primary btn-sm" href="#" role="button" style="display: block;">Show Sample &gt;</a>
     </div>
 </div>
