@@ -5,7 +5,7 @@ The aim of this project is to demonstrate some samples about how to develop and 
 ![licence](https://img.shields.io/npm/l/ngx-photo-card)
 
 ## Demo Page
-* https://tursoft.github.io/tursoft-angular-components/
+* https://tursoft.github.io/tursoft-angular-components
 * https://stackblitz.com/edit/ngx-photo-card
 * https://stackblitz.com/edit/tursoft-collapsible
 
