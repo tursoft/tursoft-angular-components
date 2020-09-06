@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tursoft/tursoft-angular-components"
+    "url": "https://github.com/tursoft/tursoft-angular-components/tree/master/projects/ngx-photo-card"
   },
   "homepage": "https://tursoft.github.io/tursoft-angular-components/#/ngx-photo-card",
   "license": "MIT",
