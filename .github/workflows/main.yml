@@ -25,7 +25,7 @@ jobs:
       - name: Angular Deploy GitHub Pages Actions
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
         with:
-          angular_dist_build_folder: dist\tursoft-angular-components
+          angular_dist_build_folder: dist/tursoft-angular-components
       #- name: GitHub Pages
       #  uses: crazy-max/ghaction-github-pages@v2.1.2
       #  with:
