@@ -8,10 +8,15 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+
     "build-ngx-photo-card": "ng build ngx-photo-card",
     "publish-ngx-photo-card": "ng build ngx-photo-card&& cd dist\\ngx-photo-card && npm publish && cd ..\\..",
+
     "build-tursoft-collapsible": "ng build tursoft-collapsible",
-    "publish-tursoft-collapsible": "ng build tursoft-collapsible && cd dist\\tursoft-collapsible && npm publish && cd ..\\.."
+    "publish-tursoft-collapsible": "ng build tursoft-collapsible && cd dist\\tursoft-collapsible && npm publish && cd ..\\..",
+
+    "build-all": "npm run build-ngx-photo-card && npm run build-tursoft-collapsible",
+    "publish-all": "npm run publish-ngx-photo-card && npm run publish-tursoft-collapsible"
   },
   "private": true,
   "dependencies": {
