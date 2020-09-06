@@ -1,0 +1,5 @@
+<div class="jumbotron" *ngFor="let component of components">
+    <h1 class="display-4">{{ component.title }}</h1>
+    <p class="lead">{{ component.summary }}</p>
+    <a [routerLink]="[component.path]" class="btn btn-primary btn-lg" href="#" role="button">Show Sample</a>
+</div>

@@ -7,12 +7,14 @@ import { NgxPhotoCardModule } from 'projects/ngx-photo-card/src/lib/ngx-photo-ca
 import { TursoftCollapsibleModule } from 'projects/tursoft-collapsible/src/public-api';
 import { NgxPhotoCardComponent } from './components/ngx-photo-card/ngx-photo-card.component';
 import { TursoftCollapsibleComponent } from './components/tursoft-collapsible/tursoft-collapsible.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxPhotoCardComponent,
-    TursoftCollapsibleComponent
+    TursoftCollapsibleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-
     "build-ngx-photo-card": "ng build ngx-photo-card",
     "publish-ngx-photo-card": "ng build ngx-photo-card&& cd dist\\ngx-photo-card && npm publish && cd ..\\..",
     "build-tursoft-collapsible": "ng build tursoft-collapsible",
@@ -24,6 +23,8 @@
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
