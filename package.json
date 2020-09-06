@@ -10,10 +10,12 @@
     "e2e": "ng e2e",
 
     "build-ngx-photo-card": "ng build ngx-photo-card",
-    "publish-ngx-photo-card": "ng build ngx-photo-card&& cd dist\\ngx-photo-card && npm publish && cd ..\\..",
+    "publish-ngx-photo-card":
+        "cd projects\\ngx-photo-card && npm version patch && cd ..\\.. && ng build ngx-photo-card && cd dist\\ngx-photo-card && npm publish && cd ..\\.. && git add projects\\ngx-photo-card\\package.json && git commit -m \"new version for ngx-photo-cards\" && git pull && git push origin",
 
     "build-tursoft-collapsible": "ng build tursoft-collapsible",
-    "publish-tursoft-collapsible": "ng build tursoft-collapsible && cd dist\\tursoft-collapsible && npm publish && cd ..\\..",
+    "publish-tursoft-collapsible": 
+        "cd projects\\tursoft-collapsible && npm version patch && cd ..\\.. && ng build tursoft-collapsible && cd dist\\tursoft-collapsible && npm publish && cd ..\\.. && git add projects\\tursoft-collapsible\\package.json && git commit -m \"new version for tursoft-collapsible\" && git pull && git push origin",
 
     "build-all": "npm run build-ngx-photo-card && npm run build-tursoft-collapsible",
     "publish-all": "npm run publish-ngx-photo-card && npm run publish-tursoft-collapsible"
