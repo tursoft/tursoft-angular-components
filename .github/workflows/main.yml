@@ -22,8 +22,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Angular Github Actions
-        uses: mayurrawte/github-angular-actions@latest
+      - name: Angular Deploy GitHub Pages Actions
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
 
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.2
+        with:
+          build_dir: dist
