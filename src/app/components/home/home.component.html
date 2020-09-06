@@ -1,5 +1,7 @@
-<div class="jumbotron" *ngFor="let component of components">
-    <h1 class="display-4">{{ component.title }}</h1>
-    <p class="lead">{{ component.summary }}</p>
-    <a [routerLink]="[component.path]" class="btn btn-primary btn-lg" href="#" role="button">Show Sample</a>
+<div class="card-container">
+    <div class="card" *ngFor="let component of components">
+        <div class="card-title">{{ component.title }}</div>
+        <p class="card-summary">{{ component.summary }}</p>
+        <a [routerLink]="[component.path]" class="btn btn-primary btn-sm" href="#" role="button" style="display: block;">Show Sample &gt;</a>
+    </div>
 </div>

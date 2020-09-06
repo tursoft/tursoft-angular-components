@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppRoute } from 'src/app/app-routing.module';
-import { title } from 'process';
 
 @Component({
   selector: 'app-home',

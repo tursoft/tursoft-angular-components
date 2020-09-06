@@ -1,0 +1,22 @@
+.card {
+    background-color: lightgray;
+    border: 0px;
+    padding: 30px 40px 30px 40px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-summary {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.card-container {
+ text-align: center;
+ padding-top: 50px;
+}

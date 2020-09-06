@@ -1,0 +1,35 @@
+<div class="site-title">
+    <strong>Tursoft</strong> Angular Components
+</div>
+
+<div>
+    <div *ngIf="!isHomePage">
+        <div class="page-toolbar">
+            <a class="btn btn-light btn-sm" [routerLink]="['/']" href="#" role="button" style="margin-right: 20px;">&lt; Back to Home</a>     
+        </div>    
+        
+        <div class="page-title-panel">
+            <div class="page-title-icon">
+                <i class="fab fa-angular"></i>
+            </div>
+            <div class="page-title-text">
+                <div class="page-title">{{ pageTitle }}</div>
+                <div class="page-subtitle">{{ pageSummary }}</div>
+            </div>
+
+            <div class="page-title-links">
+                <a class="btn btn-light btn-sm page-title-link" [href]="'https://github.com/tursoft/tursoft-angular-components/tree/master/projects/'+pagePath" target="_blank"><i class="fab fa-github"></i> Github</a><br/>
+                <a class="btn btn-light btn-sm page-title-link" [href]="'https://www.npmjs.com/package/'+pagePath" target="_blank"><i class="fab fa-npm"></i> Npm</a>        
+            </div>
+        </div>
+    </div>
+    
+    <div class="site-content">
+        <router-outlet></router-outlet>
+    </div>    
+</div>
+
+<footer>
+    Developed by Muhammet Turşak (tursoft) <br/>
+    <a href="http://tursoft.net" target="_blank">tursoft.net</a>  | <a href="mailto:tursoft@gmail.com">tursoft@gmail.com</a>
+</footer>

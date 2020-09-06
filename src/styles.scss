@@ -1,5 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
-body, html {
+.site-title {
+    background-color: #183153;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    font-size: 32px;
+}
+
+.site-content {
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
+    min-height: 500px;
+}
+
+.page-toolbar {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 10px;
+}
+
+.page-title-panel {
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    // align-content: center;
+    // align-items: center;
+    justify-content: center;
+}
+
+.page-title-icon {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 60px;
+    align-self: stretch;
+}
+
+.page-title-text {
+    display: inline-block;
+    vertical-align: middle;
+    flex-grow: 1;
+    align-self: stretch;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.page-title-links {
+    display: inline-block;
+    vertical-align: middle;
+    flex-basis: 120px;
+    align-self: stretch;
+}
+
+.page-title-link {
+    min-width: 100px;
+    margin: 1px;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 15px 0px 15px;
+}
+
+.page-subtitle {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0px 15px 0px 15px;
+}
+
+
+footer {
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
 }

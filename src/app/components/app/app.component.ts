@@ -8,6 +8,7 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 })
 export class AppComponent {
   pageTitle = '';
+  pageSummary = '';
   pagePath = '';
   isHomePage = false;
 
@@ -16,6 +17,8 @@ export class AppComponent {
       if (event instanceof NavigationEnd) {
         const data = route.root.firstChild.snapshot.data;
         this.pageTitle = data.title;
+        this.pageSummary = data.summary;
+        this.pagePath = route.root.firstChild.snapshot.routeConfig.path;
         this.isHomePage = (data.type === 'homepage');
       }
     });
