@@ -32,8 +32,17 @@ The aim of this project is to demonstrate some samples about how to develop and 
 
 ## How to Deploy
 
-* npm run publish-ngx-photo-card
-* npm run publish-tursoft-collapsible
+```
+npm run publish-all
+```
+
+```
+npm run publish-ngx-photo-card
+```
+
+```
+npm run publish-tursoft-collapsible
+```
 
 ## Todos
 
