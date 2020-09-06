@@ -1,11 +1,7 @@
 # tursoft-angular-components
 
-The aim of this project is to demonstrate same samples about how to develop and publish angular components.
+The aim of this project is to demonstrate some samples about how to develop and publish angular components.
 
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Components
 * *ngx-photo-card*
@@ -18,6 +14,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Roadmap
 * Login Component (Microsoft / Google Style)
+* Canvas Drawing Component
 * Photo Upload Component
 * Icon Chooser Component
 * ...
