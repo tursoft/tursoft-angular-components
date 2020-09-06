@@ -8,12 +8,17 @@ $border-color: #ddd;
     display: inline-block;
     border-radius: 10px;
     text-align: center;
+
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 1px -1px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2);
 }
 
 .image-container {
     border-radius: 10px;
-    // background-color: $border-color;
-    // overflow: hidden;
+}
+
+.image-container:hover {
+    opacity:0.5;
+    cursor: pointer;
 }
 
 .image {
