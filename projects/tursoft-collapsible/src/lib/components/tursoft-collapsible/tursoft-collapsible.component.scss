@@ -1,9 +1,9 @@
 $border-color: #ddd;
 
 .collapsible-container {
-    border: 1px solid $border-color;
     display: block;
     margin: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 1px -1px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2);
 }
 
 .collapsible-header {
@@ -13,12 +13,59 @@ $border-color: #ddd;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.collapsible-header.expanded {
+    border-bottom: 1px dashed $border-color;
+}
+
+.collapsible-header:before {
+    content: " ";
+    display: inline-block;
+    color: gray;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-out;
+}
+
+.collapsible-header.hide:before {
+    display: none;
+}
+
+.collapsible-header.expanded:before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
 .collapsible-body {
-    -moz-transition: height 1s;
-    -ms-transition: height 1s;
-    -o-transition: height 1s;
-    -webkit-transition: height 1s;
-    transition: height 1s;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;    
+}
+
+.collapsible-body.expanded {
+    // height: '*';
+    // opacity: 1;
+    height: auto;
+    max-height: 300px;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    clip: auto;
+}
+
+.collapsible-body.collapsed {
+
+    // opacity: 0;
+    max-height: 0px;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    clip: auto;
 }
 
 .collapsible-body-wrapper {
@@ -26,15 +73,5 @@ $border-color: #ddd;
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid $border-color;
-}
-
-// .collapsible-body .expanded {
-//     height: auto;
-// }
-
-.collapsible-body.collapsed {
-
-    height: 0px;
-    overflow: hidden;
-    // display: none;
+    border-top: 0px;
 }
