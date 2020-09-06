@@ -17,7 +17,6 @@ The aim of this project is to demonstrate some samples about how to develop and 
 * Canvas Drawing Component
 * Photo Upload Component
 * Icon Chooser Component
-* ...
 
 ## How to Deploy
 
