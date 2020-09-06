@@ -1,9 +1,9 @@
 {
   "name": "ngx-photo-card",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": { "name": "Muhammet Turşak", "email": "tursoft@gmail.com", "url": "http://tursoft.net" },
   "repository": { "type": "git", "url": "https://github.com/tursoft/tursoft-angular-components" },
-  "homepage": "https://tursoft.github.io/tursoft-angular-components",
+  "homepage": "https://tursoft.github.io/tursoft-angular-components/#/ngx-photo-card",
   "license": "MIT",
   "keywords": ["angular", "component", "photo"],
   "peerDependencies": {
