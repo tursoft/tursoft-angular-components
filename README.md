@@ -2,6 +2,7 @@
 
 The aim of this project is to demonstrate some samples about how to develop and publish angular components.
 
+![licence](https://img.shields.io/npm/l/ngx-photo-card)
 
 ## Demo Page
 * https://tursoft.github.io/tursoft-angular-components/
@@ -9,13 +10,19 @@ The aim of this project is to demonstrate some samples about how to develop and 
 * https://stackblitz.com/edit/tursoft-collapsible
 
 ## Components
-* *ngx-photo-card*
+*ngx-photo-card*
 
-[![npm version](https://badge.fury.io/js/ngx-photo-card.svg)](https://badge.fury.io/js/ngx-photo-card)
+![npm version](https://img.shields.io/npm/v/ngx-photo-card)
+![npm downloads](https://img.shields.io/npm/dt/ngx-photo-card)
+![licence](https://img.shields.io/npm/l/ngx-photo-card)
 
-* *tursoft-collapsible*
 
-[![npm version](https://badge.fury.io/js/tursoft-collapsible.svg)](https://badge.fury.io/js/tursoft-collapsible)
+*tursoft-collapsible*
+
+![npm version](https://img.shields.io/npm/v/tursoft-collapsible)
+![npm downloads](https://img.shields.io/npm/dt/tursoft-collapsible)
+![licence](https://img.shields.io/npm/l/tursoft-collapsible)
+
 
 ## Roadmap
 * Login Component (Microsoft / Google Style)
@@ -25,17 +32,14 @@ The aim of this project is to demonstrate some samples about how to develop and 
 
 ## How to Deploy
 
-*ngx-photo-card*
 * npm run publish-ngx-photo-card
-
-*tursoft-collapsible*
 * npm run publish-tursoft-collapsible
 
 ## Todos
 
-* add git actions to build on push
-* deploy to git pages
-* add git pages link to npm page
+* build git release mechanism
 * add some screenshoots
 * implement tests
-* samples on stackblitz.com
+* add better samples
+* add badge for npm downloads
+* deploy to bit.dev

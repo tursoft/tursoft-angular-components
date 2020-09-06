@@ -2,6 +2,10 @@
 
 Simple photo card component for Angular
 
+![npm](https://img.shields.io/npm/v/ngx-photo-card)
+![npm](https://img.shields.io/npm/dt/ngx-photo-card)
+![NPM](https://img.shields.io/npm/l/ngx-photo-card)
+
 ## Demo Page
 * https://stackblitz.com/edit/ngx-photo-card
 * https://tursoft.github.io/tursoft-angular-components/#/ngx-photo-card

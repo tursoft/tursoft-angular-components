@@ -2,6 +2,10 @@
 
 Simple collapsible component for Angular
 
+![npm](https://img.shields.io/npm/v/tursoft-collapsible)
+![npm](https://img.shields.io/npm/dt/tursoft-collapsible)
+![NPM](https://img.shields.io/npm/l/tursoft-collapsible)
+
 ## Demo Page
 * https://stackblitz.com/edit/tursoft-collapsible
 * https://tursoft.github.io/tursoft-angular-components/#/tursoft-collapsible
