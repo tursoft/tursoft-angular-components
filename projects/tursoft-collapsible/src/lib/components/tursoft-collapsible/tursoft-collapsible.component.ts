@@ -15,7 +15,7 @@ export class TursoftCollapsibleComponent extends TursoftBaseComponentComponent i
 
   @Output() public hideIconChange = new EventEmitter<boolean>();
   get hideIcon(): boolean { return this.getPropertyValue('hideIcon', false); }
-  @Input() set hideIcon(val: boolean) { this.setPropertyValue('hideIcon', val, this.hideIconChange); }
+  @Input('hide-toggle-icon') set hideIcon(val: boolean) { this.setPropertyValue('hideIcon', val, this.hideIconChange); }
 
   constructor() {
     super();
