@@ -3,6 +3,7 @@
 Simple collapsible component for Angular
 
 ## Demo Page
+* https://stackblitz.com/edit/tursoft-collapsible
 * https://tursoft.github.io/tursoft-angular-components/#/tursoft-collapsible
 
 ## Usage

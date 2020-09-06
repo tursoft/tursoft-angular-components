@@ -3,6 +3,7 @@
 Simple photo card component for Angular
 
 ## Demo Page
+* https://stackblitz.com/edit/ngx-photo-card
 * https://tursoft.github.io/tursoft-angular-components/#/ngx-photo-card
 
 ## Usage
