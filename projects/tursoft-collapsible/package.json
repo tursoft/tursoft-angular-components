@@ -15,7 +15,7 @@
   "keywords": [
     "angular",
     "component",
-    "photo"
+    "collapsible"
   ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
