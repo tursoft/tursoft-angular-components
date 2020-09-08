@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 10px;
+    border-top: 1px dashed lightgray;    
+    border-bottom: 1px dashed lightgray;    
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-label {
+    flex-basis: 150px;
+    margin: 2px;
+}
+
+.col-editor {
+    flex-grow: 0.98;
+    margin: 2px;
+}
+
+ngx-text-expander {
+    margin: 20px;
+}

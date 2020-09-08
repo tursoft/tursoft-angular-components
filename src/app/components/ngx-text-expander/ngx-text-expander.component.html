@@ -1,20 +1,65 @@
+<h3>Sample1: Simple</h3>
 <ngx-text-expander
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." max-count="20"
-        max-word-count="6"
-        less-text="show less"
-        more-text="show more"
-        show-ellipse="true">
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       [max-char-count]="20"
+       less-text="show less"
+       more-text="show more"
+       [show-ellipse]="true">
 </ngx-text-expander>
 
 <br/>
+<br/>
+<br/>
 
+<h3>Sample2: Binding</h3>
+<div class="form">
+  <div class="row">
+        <span class="col-label">text</span>
+        <input class="col-editor" [(ngModel)]="config1.text">
+  </div>
+
+  <div class="row">
+        <span class="col-label">maxCharCount</span>
+        <input class="col-editor" [(ngModel)]="config1.maxCharCount"  type="number">
+  </div>
+
+  <div class="row">
+        <span class="col-label">maxWordCount</span>
+        <input class="col-editor" [(ngModel)]="config1.maxWordCount"  type="number">
+  </div>
+
+  <div class="row">
+        <span class="col-label">lessText</span>
+        <input class="col-editor" [(ngModel)]="config1.lessText">
+  </div>
+
+  <div class="row">
+        <span class="col-label">moreText</span>
+        <input class="col-editor" [(ngModel)]="config1.moreText">
+  </div>
+
+  <div class="row">
+        <span class="col-label">showEllipse</span>
+        <input [(ngModel)]="config1.showEllipse"  type="checkbox">
+  </div>
+  
+  <div class="row">
+        <span class="col-label">isExpanded</span>
+        <input [(ngModel)]="config1.isExpanded"  type="checkbox">
+  </div>
+</div>
+
+<br/>
 <ngx-text-expander
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." max-count="20"
-        max-char-count="6"
-        less-text="show less"
-        more-text="show more"
-        show-ellipse="true">
+        [(text)]="config1.text"
+        [(max-char-count)]="config1.maxCharCount"
+        [(max-word-count)]="config1.maxWordCount"
+        [(less-text)]="config1.lessText"
+        [(more-text)]="config1.moreText"
+        [(show-ellipse)]="config1.showEllipse"
+        [(expanded)]="config1.isExpanded"
+        >
 </ngx-text-expander>
-
-<!-- <iframe src="https://stackblitz.com/edit/ngx-text-expander?embed=1&file=src/app/app.component.html&hideExplorer=1&hideNavigation=1&view=both">
+<!-- 
+<iframe src="https://stackblitz.com/edit/ngx-text-expander?embed=1&file=src/app/app.component.html&hideExplorer=1&hideNavigation=1&view=both">
 </iframe> -->

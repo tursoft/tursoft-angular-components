@@ -7,6 +7,7 @@ The aim of this project is to demonstrate some samples about how to develop and 
 ## Demo
 * https://tursoft.github.io/tursoft-angular-components
 * https://stackblitz.com/edit/ngx-photo-card
+* https://stackblitz.com/edit/ngx-text-expander
 * https://stackblitz.com/edit/tursoft-collapsible
 
 ## Components
@@ -15,6 +16,12 @@ The aim of this project is to demonstrate some samples about how to develop and 
 ![npm version](https://img.shields.io/npm/v/ngx-photo-card)
 ![npm downloads](https://img.shields.io/npm/dt/ngx-photo-card)
 ![licence](https://img.shields.io/npm/l/ngx-photo-card)
+
+*ngx-text-expander*
+
+![npm version](https://img.shields.io/npm/v/ngx-text-expander)
+![npm downloads](https://img.shields.io/npm/dt/ngx-text-expander)
+![licence](https://img.shields.io/npm/l/ngx-text-expander)
 
 
 *tursoft-collapsible*
@@ -33,11 +40,15 @@ The aim of this project is to demonstrate some samples about how to develop and 
 ## Publish
 
 ```
-npm run publish-all
+npm run login
 ```
 
 ```
 npm run publish-ngx-photo-card
+```
+
+```
+npm run publish-ngx-text-expander
 ```
 
 ```
