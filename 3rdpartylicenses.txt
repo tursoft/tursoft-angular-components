@@ -365,8 +365,6 @@ Apache-2.0
 tursoft-collapsible
 MIT
 
-tursoft-components-common
-
 zone.js
 MIT
 The MIT License
