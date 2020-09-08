@@ -1,10 +1,10 @@
 <div class="collapsible-container">
-    <div class="collapsible-header" [ngClass]="{'expanded': isExpanded, 'collapsed': !isExpanded, 'hide': hideIcon }" (click)="toggle()">
+    <div class="collapsible-header" [ngClass]="{'expanded': expanded, 'collapsed': !expanded, 'hide': hideIcon }" (click)="toggle()">
         <div style="display: inline-block;">
             <ng-content select="[collapsible-header]"></ng-content>
         </div>
     </div>
-    <div class="collapsible-body" [ngClass]="isExpanded ? 'expanded' : 'collapsed'">        
+    <div class="collapsible-body" [ngClass]="expanded ? 'expanded' : 'collapsed'">        
         <div class="collapsible-body-wrapper">
             <ng-content select="[collapsible-body]"></ng-content>
         </div>        
