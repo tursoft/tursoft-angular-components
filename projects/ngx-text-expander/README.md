@@ -29,9 +29,21 @@ import { NgxTextExpanderModule } from 'ngx-text-expander';
 
 *mycomponent.html*
 ```html
-  <ngx-text-expander
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." max-count="20"
-        less-text="less"
-        more-text="more"
-        show-ellipse="true"></ngx-text-expander>
+<ngx-text-expander
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       [max-char-count]="20"
+       less-text="show less"
+       more-text="show more"
+       [show-ellipse]="true">
+</ngx-text-expander>
+```
+
+```html
+<ngx-text-expander
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        [max-char-count]="6"
+        less-text="show less"
+        more-text="show more"
+        [show-ellipse]="true">
+</ngx-text-expander>
 ```

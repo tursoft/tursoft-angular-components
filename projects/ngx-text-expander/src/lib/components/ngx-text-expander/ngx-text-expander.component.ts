@@ -58,13 +58,13 @@ export class NgxTextExpanderComponent implements OnInit {
     this.showEllipseChange.emit(this._showEllipse);
   }
 
-  @Output() public isExpandedChange = new EventEmitter<boolean>();
-  private _isExpanded = false;
-  get isExpanded(): boolean { return this._isExpanded; }
-  @Input('show-ellipse') set isExpanded(val: boolean) {
-    this._isExpanded = val;
+  @Output() public expandedChange = new EventEmitter<boolean>();
+  private _expanded = false;
+  get expanded(): boolean { return this._expanded; }
+  @Input('expanded') set expanded(val: boolean) {
+    this._expanded = val;
     this.updateView();
-    this.isExpandedChange.emit(this._isExpanded);
+    this.expandedChange.emit(this._expanded);
   }
 
 
@@ -81,7 +81,7 @@ export class NgxTextExpanderComponent implements OnInit {
 
   updateView() {
     let visibleText = this.text;
-    if (!this.isExpanded) {
+    if (!this.expanded) {
       if (this.maxCharCount > 0) {
         visibleText = this.getVisibleTextByCharCount(this.text, this.maxCharCount);
       } else if (this.maxWordCount > 0) {
@@ -139,7 +139,7 @@ export class NgxTextExpanderComponent implements OnInit {
   }
 
   setExpanded(isExpanded: boolean) {
-    this.isExpanded = isExpanded;
+    this.expanded = isExpanded;
   }
 
   ngOnInit() {
