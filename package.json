@@ -8,12 +8,18 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+
     "build-ngx-photo-card": "ng build ngx-photo-card",
     "publish-ngx-photo-card": "cd projects\\ngx-photo-card && npm version patch && cd ..\\.. && ng build ngx-photo-card && cd dist\\ngx-photo-card && npm publish && cd ..\\.. && git add projects\\ngx-photo-card\\package.json && git commit -m \"new version for ngx-photo-cards\" && git pull && git push origin",
+
     "build-tursoft-collapsible": "ng build tursoft-collapsible",
     "publish-tursoft-collapsible": "cd projects\\tursoft-collapsible && npm version patch && cd ..\\.. && ng build tursoft-collapsible && cd dist\\tursoft-collapsible && npm publish && cd ..\\.. && git add projects\\tursoft-collapsible\\package.json && git commit -m \"new version for tursoft-collapsible\" && git pull && git push origin",
+
+    "build-ngx-text-expander": "ng build ngx-text-expander",
+    "publish-ngx-text-expander": "cd projects\\ngx-text-expander && npm version patch && cd ..\\.. && ng build ngx-text-expander && cd dist\\ngx-text-expander && npm publish && cd ..\\.. && git add projects\\ngx-text-expander\\package.json && git commit -m \"new version for ngx-text-expander\" && git pull && git push origin",
+
     "build-all": "npm run build-ngx-photo-card && npm run build-tursoft-collapsible",
-    "publish-all": "npm run publish-ngx-photo-card && npm run publish-tursoft-collapsible"
+    "publish-all": "npm run publish-ngx-photo-card && npm run publish-tursoft-collapsible && publish-ngx-text-expander"
   },
   "private": true,
   "dependencies": {

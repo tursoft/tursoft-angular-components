@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/text-expander",
+  "dest": "../../dist/ngx-text-expander",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

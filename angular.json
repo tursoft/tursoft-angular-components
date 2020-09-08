@@ -199,6 +199,76 @@
           }
         }
       }
+    },
+    "ngx-text-expander": {
+      "projectType": "library",
+      "root": "projects/ngx-text-expander",
+      "sourceRoot": "projects/ngx-text-expander/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-text-expander/tsconfig.lib.json",
+            "project": "projects/ngx-text-expander/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-text-expander/src/test.ts",
+            "tsConfig": "projects/ngx-text-expander/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-text-expander/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-text-expander/tsconfig.lib.json",
+              "projects/ngx-text-expander/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "tursoft-components-common": {
+      "projectType": "library",
+      "root": "projects/tursoft-components-common",
+      "sourceRoot": "projects/tursoft-components-common/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tursoft-components-common/tsconfig.lib.json",
+            "project": "projects/tursoft-components-common/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tursoft-components-common/src/test.ts",
+            "tsConfig": "projects/tursoft-components-common/tsconfig.spec.json",
+            "karmaConfig": "projects/tursoft-components-common/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tursoft-components-common/tsconfig.lib.json",
+              "projects/tursoft-components-common/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "tursoft-angular-components"
 }

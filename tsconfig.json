@@ -30,6 +30,18 @@
       ],
       "tursoft-collapsible/*": [
         "dist/tursoft-collapsible/*"
+      ],
+      "text-expander": [
+        "dist/text-expander"
+      ],
+      "text-expander/*": [
+        "dist/text-expander/*"
+      ],
+      "tursoft-components-common": [
+        "dist/tursoft-components-common"
+      ],
+      "tursoft-components-common/*": [
+        "dist/tursoft-components-common/*"
       ]
     }
   },

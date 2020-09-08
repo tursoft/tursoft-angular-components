@@ -1,0 +1,6 @@
+<div>
+    <span>{{ visibleText }}</span>
+    <span *ngIf="showEllipse && text != visibleText">...</span>
+    <a class="link" (click)="setExpanded(false)" *ngIf="isExpanded">{{lessText}}</a>
+    <a class="link" (click)="setExpanded(true)" *ngIf="!isExpanded">{{moreText}}</a>
+</div>
