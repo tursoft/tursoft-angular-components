@@ -125,6 +125,9 @@ THE SOFTWARE.
 ngx-photo-card
 MIT
 
+ngx-text-expander
+MIT
+
 regenerator-runtime
 MIT
 MIT License
