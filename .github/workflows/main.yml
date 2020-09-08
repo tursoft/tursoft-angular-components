@@ -19,9 +19,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Clean Workspace
+        # You may pin to the exact commit or the version.
+        # uses: AutoModality/action-clean@d004b47eb728f2a83316fc70ba9a62ef97278013
+        uses: AutoModality/action-clean@v1.1.0
+  
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      # Angular Deploy GitHub Pages Actions
       - name: Angular Deploy GitHub Pages Actions
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
         with:
