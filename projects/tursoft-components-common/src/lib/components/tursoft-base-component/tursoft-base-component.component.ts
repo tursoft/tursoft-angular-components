@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 export abstract class TursoftBaseComponentComponent {
 
@@ -6,7 +6,6 @@ export abstract class TursoftBaseComponentComponent {
   constructor() {
 
   }
-
 
   getPropertyValue<T>(propertyName: string, defaultValue?: T): T {
     let result: T = defaultValue;

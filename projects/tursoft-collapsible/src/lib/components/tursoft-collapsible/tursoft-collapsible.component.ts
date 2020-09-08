@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { TursoftBaseComponentComponent } from '../tursoft-base-component/tursoft-base-component.component';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+// tslint:disable-next-line: max-line-length
+import { TursoftBaseComponentComponent } from 'projects/tursoft-components-common/src/lib/components/tursoft-base-component/tursoft-base-component.component';
 
 @Component({
   selector: 'tursoft-collapsible',
